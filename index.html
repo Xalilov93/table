@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+        background-color: rgb(0, 194, 194);
+    }
+    
+    .table {
+        justify-content: center;
+        display: flex;
+    }
+
+    table {
+      width: 1000px;
+      padding: 5px;
+      align-self: center;
+    }
+
+    thead {
+      text-align: center;
+      margin: 15px;
+    }
+
+    table,
+    th,
+    tr,
+    td {
+      border: 1px solid black;
+    }
+    
+    
+    thead tr > td, th {
+      padding: 20px;
+    }
+
+    tbody tr > td  {
+        padding: 15px 45px 15px 5px;
+    }
+
+    .day {
+        font-size: 3rem;
+    }
+
+    .orange {
+        background-color: orange;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    h1 {
+        text-align: center;
+    }
+  </style>
+
+  <body>
+    <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th class="day" rowspan="3">day</th>
+              <th colspan="3">seminar</th>
+            </tr>
+            <tr>
+              <th colspan="2">schedule</th>
+              <th rowspan="2">topic</th>
+            </tr>
+            <tr>
+              <th>begin</th>
+              <th>end</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Monday</td>
+              <td class="orange" rowspan="2">8:00 a.m</td>
+              <td class="blue" rowspan="2">5:00 p.m</td>
+              <td>Introduction to XML</td>
+            </tr>
+            <tr>
+              <td>Validatiy: DTD and Relax NG</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Tuesday</td>
+              <td class="orange">8:00 a.m</td>
+              <td class="orange">11:00 a.m</td>
+              <td>XPath</td>
+            </tr>
+            <tr>
+              <td class="orange">11:00 a.m</td>
+              <td class="green">2:00 a.m</td>
+              <td rowspan="2">XSL Transfornmatics</td>
+            </tr>
+            <tr>
+              <td class="green">2:00 a.m</td>
+              <td class="blue">5:00 p.m</td>
+            </tr>
+            <tr>
+              <td>Wendesday</td>
+              <td class="orange">8:00 a.m</td>
+              <td class="green">12:00 p.m</td>
+              <td>XSL Formatting Objects</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <h1>Table By-Mr Abbos</h1>
+  </body>
+</html>
